@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { selectNavbar } from 'src/redux/slices/navbar';
 import { CenterVertically } from 'src/styles/utility';
 import Button, { ButtonSizes } from '../dls/Button/Button';
-import LanuageSelector from './LanguageSelector';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
   const { isVisible } = useSelector(selectNavbar);
@@ -21,7 +21,7 @@ const Navbar = () => {
                 iconAlt="logo"
                 href="/"
               />
-              <LanuageSelector />
+              <LanguageSelector />
             </LeftCTA>
           </CenterVertically>
           <CenterVertically>
